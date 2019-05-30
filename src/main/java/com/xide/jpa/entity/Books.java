@@ -24,7 +24,7 @@ public class Books {
     @Column(name = "summary")
     private String summary;//内容简介
     @Column(name = "publisher")
-    private int publisher;//出版社名称
+    private String publisher;//出版社名称
     @Column(name = "pages")
     private String pages;//总页数
 }
