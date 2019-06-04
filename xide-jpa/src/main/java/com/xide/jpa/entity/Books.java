@@ -6,13 +6,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /**
  * 图书信息
  */
 @Data
 @Entity
-@Table(name = "books")
+@Table(name = "yw_books")
 public class Books {
     @Id
     private String id;//ID
@@ -29,5 +30,9 @@ public class Books {
     @Column(name = "publisher")
     private String publisher;//出版社名称
     @Column(name = "pages")
-    private String pages;//总页数
+    private int pages;//总页数
+    @Column(name = "create_time")
+    private Date createTime;//创建时间
+    @Column(name = "update_time")
+    private Date updateTime;//修改时间
 }

@@ -21,5 +21,5 @@ public class AddBookDto {
     private String publisher;
 
     @ApiModelProperty(value="总页数", required=true)
-    private String pages;
+    private int pages;
 }
